@@ -1,104 +1,73 @@
 * {
-    padding: 10;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    outline: 0;
-    transition: all 0.5s ease;
 }
-
-body { 
-    font-family: sans-serif;
-}
-
-body {
-    font-family: sans-serif;
-    background-image: linear-gradient(to bottom right, rgb(224, 196, 219), rgba(235, 124, 204, 0.705));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .container {
-    display: 100vh;
-    place-items: center;
-    background-color: #1d1e1f;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #000;
+    background-color: #cbebf9;
+    min-height: 150vh;
+    border: 10px solid #1b1c1c;
 }
 
-
-.calculator {
-    position: relative;
-    height: auto;
-    width: auto;
-    padding: 120px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px #000;
+.content {
+    max-width: 900px;
+    margin: 0 auto;
 }
-
-#display {
-    margin: 0 10px;
-    height: 150px;
-    width: auto;
-    max-width: 2000px;
+.top_section {
+    margin-top: 50px;
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
-    justify-content: flex-end;
+}
+.top_section h1{
+    font-size: 80px;
+    font-weight: bold;
+    color:#0b0b0a;
+    text-transform: uppercase;
+}
+
+.top_section h2 {
     font-size: 30px;
+    text-align: center;
+}
+.image_container {
+    border-radius: 0%;
+    overflow: hidden;
+}
+.image_container,img {
+    width: 400px;
+    height: 420px;
+}
+.about_section {
+    margin-top: 50px;
+}
+.about_section h1 {
+    font-size: 60px;
+    font-weight: 400;
     margin-bottom: 20px;
-    overflow: scroll;
-}
+  }
 
-#display::-webkit-scrollbar {
-    display: block;
-    height: 1px;
+.about_section p{
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 1.2px;
+    text-align: justify;
 }
-
-button {
-    height: 60px;
-    width: 70px;
-    border: 10;
-    border-radius: 30px;
-    margin: 10px;
+.biography_section {
+    margin-bottom: 50px;
     font-size: 20px;
-    cursor: pointer;
-    transition: all 200ms ease;
+    line-height: 25px;
+    letter-spacing: 1.2px;
+}
+.biography_section h3{
+    margin-bottom: 20px;
 }
 
-button:hover {
-        transform: scale(1.1);
+.biography_section ul {
+    margin-left: 50px;
+
+}
+.biography_section li{
+    margin-bottom: 15px;
 }
 
-
-
-.calculator {
-    background-color: #1d1e1f;
-}
-
-.calculator #display {
-    color: #e4e6e7
-}
-
-.calculator button#clear {
-    background-color: #e4a0de;
-    color: #121111;
-}
-
-.calculator button.btn-number {
-    background-color: #aba7aa;
-    color: #191819;
-}
-
-.calculator button.btn-operator {
-    background-color: #aba7aa;
-    color: #191819;
-    
-}
-.calculator button.btn-equal {
-    background-color: #aba7aa;
-    color: #191819;
-    
-}
